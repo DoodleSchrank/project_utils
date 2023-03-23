@@ -1,8 +1,5 @@
 package org.utils;
 
-import java.util.Collections;
-import java.util.List;
-
 public class Correspondence<T> {
     public double similarity;
     protected T nodeA;
@@ -46,6 +43,11 @@ public class Correspondence<T> {
     @Override
     public int hashCode() {
         return nodeA.hashCode() + nodeB.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return nodeA.toString() + ", " + nodeB.toString() + " - similarity: " + similarity;
     }
 }
 
