@@ -2,8 +2,8 @@ package org.utils;
 
 public class Correspondence<T> {
     public double similarity;
-    protected T nodeA;
-    protected T nodeB;
+    public T nodeA;
+    public T nodeB;
 
     public Correspondence(Correspondence<T> correspondence) {
         this.nodeA = correspondence.nodeA();
